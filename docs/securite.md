@@ -8,7 +8,7 @@
 | Déplacement latéral | Un serveur compromis attaque le VLAN d'administration | Politique 4 : VLAN 20 → VLAN 10 refusé et journalisé | `FortiGate.conf` |
 | Reconnaissance réseau | Scan de ports, balayage ICMP | Règles Suricata 1000002 et 1000003, alertes sur dashboard | `srvcore/suricata/local.rules` |
 | Force brute SSH | Tentatives de connexion répétées | Règle Suricata 1000001, SSH limité aux VLAN internes (UFW) | `local.rules`, `ufw-srvcore.sh` |
-| Fuite de secrets | Jetons API, mots de passe dans un dépôt | Secrets en variables d'environnement, `.gitignore`, Gitleaks en CI | `glpi_alert.env.example`, `.github/workflows/ci.yml` |
+| Fuite de secrets | Jetons API, mots de passe dans un dépôt | Secrets en variables d'environnement, `.gitignore`, Gitleaks en CI | `glpi_alert.env.example`, `docs/ci-workflow.yml` |
 | Perte de données | Panne ou suppression d'un serveur | Veeam Agent for Linux + rsync quotidien (00h30), rétention 7 jours | `srvbackup/` |
 | Dérive de configuration / temps | Journaux illisibles, corrélation impossible | NTP centralisé (Chrony sur srvcore) | `srvcore/time/chrony.conf` |
 | Indisponibilité non détectée | Un service tombe sans que personne le voie | Zabbix + alertes → ticket GLPI automatique | `srvzabbix/scripts/glpi_alert.sh` |

@@ -58,10 +58,10 @@ srvglpi/         installation GLPI
 srvbackup/       backup-vms.sh (rsync) + cron, notes Veeam
 docs/            ordre de déploiement, tests de validation, modèle de menaces et durcissement (securite.md)
 scripts/         validate-lab.sh : tests de bout en bout (ICMP, DNS, ports UFW, web, blocage 9999)
-.github/         CI : shellcheck, yamllint, validation des règles Suricata, détection de secrets (Gitleaks)
+docs/ci-workflow.yml  modèle de CI (à copier dans .github/workflows/ci.yml) : shellcheck, yamllint, validation des règles Suricata, détection de secrets (Gitleaks)
 ```
 
-La CI s'exécute à chaque push ; `make lint` et `make validate` reproduisent les contrôles en local.
+La CI (à activer : voir docs/ci-workflow.yml) s'exécute à chaque push ; `make lint` et `make validate` reproduisent les contrôles en local.
 
 ## Démarrage rapide
 
