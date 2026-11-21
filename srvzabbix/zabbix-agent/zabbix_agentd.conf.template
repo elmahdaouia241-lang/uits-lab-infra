@@ -1,0 +1,8 @@
+# /etc/zabbix/zabbix_agentd.conf (extrait) - agent Zabbix des 4 serveurs
+# Remplacer HOSTNAME par srvcore | srvzabbix | srvglpi | srvbackup (identique au nom d'hote Zabbix)
+Server=192.168.20.132
+ServerActive=192.168.20.132
+Hostname=HOSTNAME
+ListenPort=10050
+LogFile=/var/log/zabbix/zabbix_agentd.log
+# Regle UFW correspondante : sudo ufw allow from 192.168.20.132 to any port 10050 proto tcp

@@ -1,0 +1,17 @@
+# /etc/postfix/main.cf - extrait : messagerie interne mail.lab.lan (Postfix + Dovecot + Roundcube)
+myhostname = mail.lab.lan
+mydomain = lab.lan
+myorigin = $mydomain
+inet_interfaces = all
+inet_protocols = ipv4
+mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
+mynetworks = 127.0.0.0/8 192.168.10.0/24 192.168.20.0/24
+home_mailbox = Maildir/
+smtpd_banner = $myhostname ESMTP
+disable_vrfy_command = yes
+smtpd_helo_required = yes
+# Dovecot : authentification SASL
+smtpd_sasl_type = dovecot
+smtpd_sasl_path = private/auth
+smtpd_sasl_auth_enable = yes
+smtpd_recipient_restrictions = permit_mynetworks, permit_sasl_authenticated, reject_unauth_destination

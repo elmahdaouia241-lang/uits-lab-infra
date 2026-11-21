@@ -1,0 +1,10 @@
+// /etc/bind/named.conf.local - zones directe et inverse de lab.lan
+zone "lab.lan" {
+    type master;
+    file "/etc/bind/zones/db.lab.lan";
+};
+
+zone "20.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/zones/db.192.168.20";
+};

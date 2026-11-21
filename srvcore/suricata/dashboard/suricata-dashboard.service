@@ -1,0 +1,18 @@
+[Unit]
+Description=Suricata Dashboard Flask
+After=network.target suricata.service
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/python3 /opt/suricata-dashboard/app.py
+Restart=on-failure
+# Durcissement : lecture seule du systeme de fichiers hors journaux
+ProtectSystem=strict
+ReadOnlyPaths=/var/log/suricata
+ProtectHome=true
+PrivateTmp=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+# Secrets et fichiers locaux : ne jamais committer
+*.env
+!*.env.example
+*.key
+*.pem
+id_*
+!*.pub
+*.tfvars
+# Captures / rapports non revises (peuvent contenir des jetons, mots de passe, IP)
+screenshots/
+*.pdf
+*.docx

@@ -1,0 +1,23 @@
+; /etc/bind/zones/db.lab.lan - zone directe
+$TTL    604800
+@       IN      SOA     srvcore.lab.lan. admin.lab.lan. (
+                        2026050601 ; serial (AAAAMMJJNN)
+                        604800     ; refresh
+                        86400      ; retry
+                        2419200    ; expire
+                        604800 )   ; negative cache TTL
+;
+@           IN  NS      srvcore.lab.lan.
+@           IN  MX  10  mail.lab.lan.
+
+srvcore     IN  A       192.168.20.133
+srvzabbix   IN  A       192.168.20.132
+srvglpi     IN  A       192.168.20.141
+srvbackup   IN  A       192.168.20.134
+fortigate   IN  A       192.168.20.254
+
+mail        IN  CNAME   srvcore
+dashboard   IN  CNAME   srvcore
+ids         IN  CNAME   srvcore
+zabbix      IN  CNAME   srvzabbix
+glpi        IN  CNAME   srvglpi

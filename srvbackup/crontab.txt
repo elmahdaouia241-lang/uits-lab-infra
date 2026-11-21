@@ -1,0 +1,3 @@
+# Installer avec : sudo crontab -e   (ou sudo crontab crontab.txt)
+# Sauvegarde rsync quotidienne a 00h30, comme le job Veeam "Backup-Infrastructure"
+30 0 * * * /usr/local/bin/backup-vms.sh

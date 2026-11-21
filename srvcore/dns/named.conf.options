@@ -1,0 +1,16 @@
+// /etc/bind/named.conf.options - BIND9 sur srvcore
+options {
+    directory "/var/cache/bind";
+
+    // Reseau interne uniquement (pas de resolveur ouvert sur Internet)
+    listen-on { 127.0.0.1; 192.168.20.133; };
+    allow-query { 127.0.0.1; 192.168.10.0/24; 192.168.20.0/24; };
+    allow-recursion { 127.0.0.1; 192.168.10.0/24; 192.168.20.0/24; };
+    recursion yes;
+
+    forwarders {
+        8.8.8.8;
+        8.8.4.4;
+    };
+    dnssec-validation no;
+};
