@@ -56,8 +56,12 @@ srvcore/         réseau, DNS, DHCP, Squid, Postfix, Chrony, UFW, suricata/ (IDS
 srvzabbix/       installation Zabbix, agent, glpi_alert.sh (intégration GLPI)
 srvglpi/         installation GLPI
 srvbackup/       backup-vms.sh (rsync) + cron, notes Veeam
-docs/            architecture détaillée, ordre de déploiement, tests de validation
+docs/            ordre de déploiement, tests de validation, modèle de menaces et durcissement (securite.md)
+scripts/         validate-lab.sh : tests de bout en bout (ICMP, DNS, ports UFW, web, blocage 9999)
+.github/         CI : shellcheck, yamllint, validation des règles Suricata, détection de secrets (Gitleaks)
 ```
+
+La CI s'exécute à chaque push ; `make lint` et `make validate` reproduisent les contrôles en local.
 
 ## Démarrage rapide
 
