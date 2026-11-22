@@ -2,10 +2,16 @@
 
 # UITS lab.lan : infrastructure sécurisée avec supervision, helpdesk et sauvegarde
 
-Laboratoire d'entreprise virtualisé (stage professionnel, DUT Génie Informatique) : services réseau, sécurité multicouche,
-supervision centralisée, gestion des incidents et sauvegarde, sur **GNS3 + VMware Workstation**.
+> ## ⚠️ Projet académique, pas une infrastructure réelle
+> Ce dépôt ne décrit **pas une infrastructure de production**. C'est un **laboratoire virtualisé** (GNS3 + VMware Workstation) que j'ai
+> conçu et réalisé comme **projet de stage de fin d'études** (DUT Génie Informatique). Il simule un environnement d'entreprise à des
+> fins d'apprentissage et de démonstration : pas d'utilisateurs réels, pas de données réelles, pas de trafic de production.
+> Mots de passe, jetons et adressage sont des valeurs de laboratoire.
 
-> **Statut :** configurations reconstituées et documentées à partir du projet réalisé en laboratoire.
+Le laboratoire couvre les services réseau, la sécurité multicouche, la supervision centralisée, la gestion automatisée des
+incidents et la sauvegarde.
+
+> **Statut des fichiers :** configurations reconstituées et documentées à partir du projet réalisé en laboratoire.
 > Les fichiers sont des modèles prêts à appliquer ; chaque secret (mot de passe, jeton) est à fournir par variable d'environnement.
 
 ## Architecture

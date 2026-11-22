@@ -2,8 +2,12 @@
 
 > 🇫🇷 [Version française](README.fr.md)
 
-A virtualized enterprise lab built during my professional internship (DUT in Computer Engineering): core network services,
-layered security, centralized monitoring, automated incident management and backup, on **GNS3 + VMware Workstation**.
+> ## ⚠️ Academic project, not a real infrastructure
+> This is **not a production infrastructure**. It is a **virtualized lab** (GNS3 + VMware Workstation) that I designed and built as my
+> **end-of-studies internship project** (DUT in Computer Engineering). It simulates an enterprise environment for learning and
+> demonstration purposes: no real users, no real data, no production traffic. Passwords, tokens and addressing are lab values.
+
+The lab covers core network services, layered security, centralized monitoring, automated incident management and backup.
 
 ![GNS3 topology](docs/img/gns3-topology.png)
 
