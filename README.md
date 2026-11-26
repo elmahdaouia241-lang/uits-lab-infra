@@ -18,6 +18,10 @@ The lab covers core network services, layered security, centralized monitoring, 
 > every password or token comes from an environment variable). The shell scripts pass `shellcheck` and the Suricata rules pass
 > `suricata -T` in CI. Screenshots below come from the original lab.
 
+## Demo video
+
+🎥 [Watch the demo of the lab (Google Drive)](https://drive.google.com/file/d/1IeoOh9jaC6JsjV2l3ORIG9CzGoryAJJq/view?usp=sharing)
+
 ## Architecture
 
 ```mermaid

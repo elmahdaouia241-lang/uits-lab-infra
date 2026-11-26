@@ -14,6 +14,10 @@ incidents et la sauvegarde.
 > **Statut des fichiers :** configurations reconstituées et documentées à partir du projet réalisé en laboratoire.
 > Les fichiers sont des modèles prêts à appliquer ; chaque secret (mot de passe, jeton) est à fournir par variable d'environnement.
 
+## Vidéo de démonstration
+
+🎥 [Voir la démonstration du laboratoire (Google Drive)](https://drive.google.com/file/d/1IeoOh9jaC6JsjV2l3ORIG9CzGoryAJJq/view?usp=sharing)
+
 ## Architecture
 
 ```mermaid
